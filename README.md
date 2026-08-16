@@ -17,6 +17,7 @@ ExpenseTrack, harcamalarınızı kategori bazlı takip etmenizi, harcama geçmi�
 
 ## 📁 Proje Dizin Yapısı
 
+```text
 expensetrack/
 ├── README.md
 ├── requirements.txt
@@ -29,8 +30,7 @@ expensetrack/
 ├── tests/
 │   └── test_models.py  # Birim testler
 └── expensetrack.py      # Ana uygulama giriş noktası
-
----
+```
 
 ## ⚙️ Kurulum ve Çalıştırma
 
@@ -44,7 +44,7 @@ expensetrack/
 1. Repoyu klonlayın:
 
 ```bash
-git clone [https://github.com/kullanici-adi/expensetrack.git](https://github.com/kullanici-adi/expensetrack.git)
+git clone https://github.com/F3lia5/ExpenseTrack.git
 cd expensetrack
 
 ```
@@ -89,8 +89,6 @@ Arayüz döngüsünün (`mainloop()`) başlatılması ve uygulama entegrasyonu.
 
 ## 📄 Lisans
 
-Bu proje MIT lisansı altında sunulmaktadır.
-
 ```
-
+Bu proje MIT lisansı altında sunulmaktadır.
 ```
