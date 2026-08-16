@@ -1,21 +1,21 @@
-💰 ExpenseTrack (Kişisel Harcama Takipçisi)
+# 💰 ExpenseTrack (Kişisel Harcama Takipçisi)
 
-    Python standart kütüphaneleri, OOP ilkeleri ve katmanlı mimari (Business Logic ile GUI ayrımı) kullanılarak geliştirilmiş, Tkinter tabanlı masaüstü harcama takip uygulaması.
+Python standart kütüphaneleri, OOP ilkeleri ve katmanlı mimari (Business Logic ile GUI ayrımı) kullanılarak geliştirilmiş, Tkinter tabanlı masaüstü harcama takip uygulaması.
 
-📌 Proje Hakkında
+## 📌 Proje Hakkında
 
 ExpenseTrack, harcamalarınızı kategori bazlı takip etmenizi, harcama geçmişinizi dosya sisteminde güvenle saklamanızı ve harcama alışkanlıklarınıza dair özet raporlar almanızı sağlayan hafif ve harici bir bağımlılık gerektirmeyen masaüstü uygulamasıdır.
 Öne Çıkan Özellikler & Konular
 
-    Katmanlı Mimari: Arayüz (GUI) ile iş mantığının (Business Logic) tamamen ayrıştırılması.
+- Katmanlı Mimari: Arayüz (GUI) ile iş mantığının (Business Logic) tamamen ayrıştırılması.
 
-    Sıfır Dış Bağımlılık (Çekirdek): Python'ın standart kütüphaneleri kullanılarak geliştirilmiştir (tkinter, dataclasses, enum, json, datetime, collections).
+- Sıfır Dış Bağımlılık (Çekirdek): Python'ın standart kütüphaneleri kullanılarak geliştirilmiştir (tkinter, dataclasses, enum, json, datetime, collections).
 
-    Veri Güvenliği & Doğrulama: try/except blokları ile hatalı veri girişlerinin engellenmesi ve verilerin JSON formatında kalıcı tutulması.
+- Veri Güvenliği & Doğrulama: try/except blokları ile hatalı veri girişlerinin engellenmesi ve verilerin JSON formatında kalıcı tutulması.
 
-    Birim Testleri: pytest ile test edilebilir arka plan mimarisi.
+- Birim Testleri: pytest ile test edilebilir arka plan mimarisi.
 
-📁 Proje Dizin Yapısı
+## 📁 Proje Dizin Yapısı
 
 expensetrack/
 ├── README.md
