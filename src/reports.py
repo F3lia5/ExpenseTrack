@@ -1,5 +1,6 @@
 from dataclasses import asdict
 from storage import harcama_ekle, harcama_yukle
+from collections import Counter
 
 def kategoriye_gore_filtrele(kategori_adi):
     tum_harcamalar = harcama_yukle()
@@ -14,3 +15,24 @@ def harcama_zamani(yil_ay):
     return sonuc
 
 print(harcama_zamani('2026-08'))
+
+def toplam_harcama():
+    tum_harcamalar = harcama_yukle()
+    toplam = sum([harcama['harcama_tutari'] for harcama in tum_harcamalar])
+    return toplam
+
+print(toplam_harcama())
+
+def kategoriye_gore_toplam(kategori_adi):
+    tum_harcamalar = harcama_yukle()
+    kategori_listesi = [harcama['harcama_kategorisi'] for harcama in tum_harcamalar]
+    sayac = Counter(kategori_listesi)
+    return sayac[kategori_adi]
+
+print(kategoriye_gore_toplam('EGITIM'))
+
+def kategoriye_gore_toplam_tutar(kategori_adi):
+    toplam = sum([harcama['harcama_tutari'] for harcama in kategoriye_gore_filtrele(kategori_adi)])
+    return toplam
+
+print(kategoriye_gore_toplam_tutar('EGITIM'))

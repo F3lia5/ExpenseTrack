@@ -72,9 +72,9 @@ Projenin modüler geliştirme sürecindeki mevcut durumu:
 
 * [✅] **1. Hazırlık ve Ortam Kurulumu**
 Sistem bağımlılıklarının kontrolü, proje dizin yapısının ve sanal ortamın oluşturulması.
-* [ ] **2. Veri Modelleri (`src/models.py`)**
+* [✅] **2. Veri Modelleri (`src/models.py`)**
 `Enum` ile kategori yapısı, `@dataclass` ile `Expense` sınıfı ve veri doğrulama kuralları.
-* [ ] **3. Veri Saklama ve Dosya İşlemleri (`src/storage.py`)**
+* [✅] **3. Veri Saklama ve Dosya İşlemleri (`src/storage.py`)**
 JSON formatında okuma/yazma, hata yönetimi ve veri dönüştürücüler.
 * [ ] **4. Raporlama Mantığı (`src/reports.py`)**
 Kategori filtreleme, toplam harcama ve `Counter` ile en çok harcanan kategori tespiti.
