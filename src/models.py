@@ -23,7 +23,3 @@ class Expense():
     def tarih_str(self) -> str:
         #ilk defa datetime'i boyle deniyom ins tekte calisir
         return self.harcama_tarihi_dt.isoformat()
-
-#try koncak bunlara hata ayiklamak icin (sadece elzem olanlar; eger harcama tutarina veya kategoriye secenekli buton koyabilirsem gerek yok)
-
-ornek_deney = Expense(harcama_tutari=10, harcama_kategorisi=HarcamaKategorisi.EGITIM, notlar="", harcama_tarihi_dt=datetime.now())

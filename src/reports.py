@@ -7,21 +7,15 @@ def kategoriye_gore_filtrele(kategori_adi):
     sonuc = [harcama for harcama in tum_harcamalar if harcama['harcama_kategorisi'] == kategori_adi]
     return sonuc
 
-print(kategoriye_gore_filtrele('EGITIM'))
-
 def harcama_zamani(yil_ay):
     tum_harcamalar = harcama_yukle()
     sonuc = [zaman for zaman in tum_harcamalar if zaman['harcama_tarihi_dt'].startswith(yil_ay)]
     return sonuc
 
-print(harcama_zamani('2026-08'))
-
 def toplam_harcama():
     tum_harcamalar = harcama_yukle()
     toplam = sum([harcama['harcama_tutari'] for harcama in tum_harcamalar])
     return toplam
-
-print(toplam_harcama())
 
 def kategoriye_gore_toplam(kategori_adi):
     tum_harcamalar = harcama_yukle()
@@ -29,10 +23,6 @@ def kategoriye_gore_toplam(kategori_adi):
     sayac = Counter(kategori_listesi)
     return sayac[kategori_adi]
 
-print(kategoriye_gore_toplam('EGITIM'))
-
 def kategoriye_gore_toplam_tutar(kategori_adi):
     toplam = sum([harcama['harcama_tutari'] for harcama in kategoriye_gore_filtrele(kategori_adi)])
     return toplam
-
-print(kategoriye_gore_toplam_tutar('EGITIM'))
