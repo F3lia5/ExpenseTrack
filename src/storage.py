@@ -1,5 +1,4 @@
 import json
-from models import Expense, ornek_deney
 import os
 
 def harcama_yukle():
