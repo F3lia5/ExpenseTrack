@@ -14,8 +14,7 @@ from models import Expense, HarcamaKategorisi
 
 
 def test_expense_olusturma():
-    """from models import Expense
-
+    """
     MUTLU YOL testi: Normal, beklenen bir Expense nesnesi oluşturulduğunda
     her alanın doğru şekilde saklandığını doğrular.
     Bu, en temel test - "nesne dediğim gibi mi kuruluyor" sorusuna cevap verir.

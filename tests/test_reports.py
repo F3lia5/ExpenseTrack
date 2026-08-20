@@ -23,6 +23,7 @@ için de geçerli).
 import datetime as dt
 import pytest
 from storage import harcama_ekle
+from models import HarcamaKategorisi
 from reports import (
     kategoriye_gore_filtrele,
     harcama_zamani,
@@ -50,19 +51,19 @@ def ornek_veri(tmp_path, monkeypatch):
 
     harcama_ekle({
         "harcama_tutari": 10,
-        "harcama_kategorisi": "EGITIM",
+        "harcama_kategorisi": HarcamaKategorisi.EGITIM,
         "notlar": "kitap",
         "harcama_tarihi_dt": dt.datetime(2026, 8, 5),
     })
     harcama_ekle({
         "harcama_tutari": 20,
-        "harcama_kategorisi": "MARKET",
+        "harcama_kategorisi": HarcamaKategorisi.MARKET,
         "notlar": "",
         "harcama_tarihi_dt": dt.datetime(2026, 8, 10),
     })
     harcama_ekle({
         "harcama_tutari": 15,
-        "harcama_kategorisi": "EGITIM",
+        "harcama_kategorisi": HarcamaKategorisi.EGITIM,
         "notlar": "kurs",
         "harcama_tarihi_dt": dt.datetime(2026, 7, 20),
     })
