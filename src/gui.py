@@ -5,7 +5,7 @@ from models import HarcamaKategorisi
 
 def kategori_sec():
     secilen = kategori_var.get()
-    messagebox.showinfo("Kategori", f"Seçilen kategori: {secilen} \n Tutar: {scale.get()}")
+    messagebox.showinfo("Kategori", f"Seçilen kategori: {secilen} \n Seçilen tutar: {scale.get()}")
 
 root = tk.Tk()
 root.title("Expense Tracker")
